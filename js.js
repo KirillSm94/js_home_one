@@ -3,8 +3,8 @@
 console.log('Первая задача: ');
 
 let ar = 10,
-    a = 15,
-    b = 25,
+    a_one = 15,
+    b_one = 25,
     sGr,
     sAll,
     howMuchGr,
@@ -13,7 +13,7 @@ let ar = 10,
 
 sAll = ar * 100;
 console.log(`Площадь участка ${ar} соток равна ${sAll} кв.м.`);
-sGr = a * b;
+sGr = a_one * b_one;
 console.log(`Площадь одной грядки 15х25 равна ${sGr} кв.м.`);
 howMuchGr = Math.floor(sAll / sGr);
 console.log(`Целых грядок вмещается ${howMuchGr}`);
@@ -43,14 +43,14 @@ alert('Третья задача (первая и вторая в консоли
 let one = +prompt('Введите первое число'),
     two = +prompt('Введите второе число'),
     three = +prompt('Введите третье число'),
-    result;
+    result_one;
 
 
-result = (one < two && one <= three) ? `Наименьшее число ${one}` :
+result_one = (one < two && one <= three) ? `Наименьшее число ${one}` :
                 (two <= one && two < three)  ? `Наименьшее число ${two}` :
                     (three < one && three <= two) ? `Наименьшее число ${three}` : 'Все числа равны или вы ничего не ввели';
 
-alert(result);
+alert(result_one);
 
 //----------------------------------------------------------------------------------------
 alert('Четвертая задача');
@@ -63,10 +63,10 @@ let m = +prompt('Введите первое число'),
 deltaM = Math.abs(10 - m);
 deltaN = Math.abs(10 - n);
 
-result = (deltaM > deltaN) ? `Ближайшее к 10 было ${n}` :
+let result_two = (deltaM > deltaN) ? `Ближайшее к 10 было ${n}` :
              (deltaN > deltaM) ? `Ближайшее к 10 было ${m}` : 'До 10 двум числам один шаг или вы ничего не ввели';
 
-alert(result);
+alert(result_two);
 
 
 //-----------------------------------------------------------------------------------------------
@@ -131,6 +131,6 @@ console.log(`Угол между CA и CB = ${angleCaCb} рад.`);
 let anglePrDeg = 90 * Math.PI / 180;
 console.log(`Угол в 90 градусов в радианах равен ${anglePrDeg} рад.`);
 
-let result = (angleAbAc === anglePrDeg || angleBaBc === anglePrDeg || angleCaCb === anglePrDeg) ? 'Треугольник прямоугольный' : 'Треугольник не прямоугольный';
+let result_three = (angleAbAc === anglePrDeg || angleBaBc === anglePrDeg || angleCaCb === anglePrDeg) ? 'Треугольник прямоугольный' : 'Треугольник не прямоугольный';
 
-console.log(result);
+console.log(result_three);
