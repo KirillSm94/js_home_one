@@ -132,6 +132,8 @@ console.log(`Угол между CA и CB = ${angleCaCb} рад.`);
 let anglePrDeg = 90 * Math.PI / 180;
 console.log(`Угол в 90 градусов в радианах равен ${anglePrDeg} рад.`);
 
-let result_three = (angleAbAc === anglePrDeg || angleBaBc === anglePrDeg || angleCaCb === anglePrDeg) ? 'Треугольник прямоугольный' : 'Треугольник не прямоугольный';
+let result_three = (angleAbAc === anglePrDeg || angleBaBc === anglePrDeg || angleCaCb === anglePrDeg) ? 'Треугольник прямоугольный' :
+    (angleAbAc === 0 || angleBaBc === 0 || angleCaCb === 0) ? 'Некоторые вектора на одной линии или введены некорректные данные' :
+        (true === isNaN(angleAbAc) || true === isNaN(angleBaBc) || true === isNaN(angleCaCb)) ? 'Вектора на одной линии' :'Треугольник не прямоугольный';
 
 console.log(result_three);
